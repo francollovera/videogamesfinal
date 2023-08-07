@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #c3c8cc, #7684ae);
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border-bottom: #140404 2px;
+    
+    
+    
+}
+.label{
+    margin-right: 10px;
+}
+.option{
+     margin: 10px;
+     text-align: center;
+     border-radius: 20px;
+}

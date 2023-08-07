@@ -1,0 +1,41 @@
+.paginado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.number{
+    font-size: 24px;
+    font-weight: 900;
+    width: 40px;
+    border: 1px solid black;
+    margin-right:7px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 3px;
+    text-align: center;
+    background: linear-gradient(to bottom, #878889, #40507f);
+    border-radius: 6px;
+}
+.number:hover{
+    
+    background: linear-gradient(to bottom, #d4d4d5, #737f9e);
+}
+
+.link:hover{
+    cursor: pointer;
+}
+.flecha{
+    width: 40px; 
+    height: 34px;
+    display: flex;
+    align-items: center;
+}
+.flecha2{
+    width: 40px; 
+    height: 34px;
+    display: flex;
+    align-items: center;
+    transform: rotate(180deg);
+    
+}

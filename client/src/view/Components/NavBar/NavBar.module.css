@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@500&display=swap');
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to bottom, #8e98a2, #30437d);
+
+  padding: 6px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border-bottom: #140404 2px;
+  font-family: 'Bangers', cursive;
+
+  
+}
+
+.mainContainer a {
+  color: rgb(235, 229, 229);
+  text-decoration: none;
+  font-size: 22px;
+  margin-left: 20px;
+  letter-spacing: 0.1rem;
+}
+.mainContainer a:hover {
+  color: white;
+  text-shadow: 0 0 5px rgb(198, 193, 193);
+  transition: transform 2s ease-in-out, background 1.5s ease-in-out;
+  cursor: pointer;
+}
