@@ -26,7 +26,7 @@ export const PAGINATION = 'PAGINATION';
 export const getVideogames = () =>{
    
     return async function (dispatch){
-        const response = await axios.get(`http://localhost:3001/videogames`);
+        const response = await axios.get(`/videogames`);
         const cleanVideogame = response.data.map((videogame) => {
           if (typeof videogame.id === "string") {
             let genres = [];
@@ -42,7 +42,7 @@ export const getVideogames = () =>{
 export const postVideogames = () =>{
    
     return async function (dispatch){
-        const apiData = await axios.get(`http://localhost:3001/videogames`);
+        const apiData = await axios.get(`/videogames`);
     
     const Postvideogames = apiData.data;
     dispatch({ type: POST_VIDEOGAMES, payload: Postvideogames })
@@ -53,7 +53,7 @@ export const getDetail = (id) =>{
     
     return async function (dispatch){
         const response = await axios.get (
-            `http://localhost:3001/videogames/${id}`
+            `/videogames/${id}`
         );
       
         const cleanVideogame = response.data.map((videogame) => {
@@ -73,7 +73,7 @@ export const getDetail = (id) =>{
 export const getVideogamesname = (name) =>{
     return async function (dispatch){
         const apiData = await axios.get (
-            `http://localhost:3001/videogames?name=${name}`
+            `/videogames?name=${name}`
         );
         const gamesbyname = apiData.data;
         dispatch ({type: GET_VIDEOGAMESNAME, payload: gamesbyname})
@@ -83,7 +83,7 @@ export const getVideogamesname = (name) =>{
 export const getGenres = () =>{
     return async function (dispatch){
                 const apiData = await axios.get(
-                    `http://localhost:3001/genres`
+                    `/genres`
                 );
                 const genres = apiData.data;
                 dispatch ({type: GET_GENRES, payload: genres});

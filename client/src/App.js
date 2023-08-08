@@ -5,6 +5,8 @@ import { useLocation } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import NavBar from './view/Components/NavBar/NavBar';
 import Style from './App.module.css'
+import axios from 'axios';
+axios.defaults.baseURL = 'http://localhost:3001/';
 
 function App() {
   //proporciona un objeto que tiene informacion de la ruta actual y quiero cambiar el contenido
